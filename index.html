@@ -4,27 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionnaire</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="myStyles.css">
+    <link rel="stylesheet" href="mann-he.gif">
+    <link rel="stylesheet" href="he-mann.gif">
 </head>
 <body onload="onStart()">
-
-<div id="startBlock">
-    <h1>Tervetuloa</h1>
-    <p>Vastaa kysymyksiin parhaan kykysi mukaan.</p>
-    <button onclick="startQuestionnaire()" >Aloita</button>
-</div>
-
-<div id="questionsBlock">
-<h1>Kysymys</h1>
-    <p id="questionline"></p>
-    <p id="answerBlock"></p>
+<div class="container-fluid">
+    <div>
+        <div class="text-center header varjo">
+            <h1 id="headerText">
+                JSQuestionnaire example
+            </h1>
+        </div>
+    </div>
     
+    <div class="row text-center varjo">
+        <div class="col-md-3 col-left sides">
+            Ohjeita
+            <p>
+                <div>
+                    Jänniä asioita
+                </div>
+                <div>
+                    Olennaista asiaa
+                </div>
+                <div>
+                    Erittäin tärkeää asiaa
+                </div>
+            </p>
+        </div>
+        <div class="col-md col-center">
+            <div id="startBlock">
+                <h1>Tervetuloa</h1>
+                <p>Vastaa kysymyksiin parhaan kykysi mukaan.</p>
+                <button onclick="startQuestionnaire()" >Aloita</button>
+            </div>
+            
+            <div id="questionsBlock">
+            <h1>Kysymys</h1>
+                <p id="questionline"></p>
+                <p id="answerBlock"></p>
+                
+            </div>
+            
+            <div id="endSummary">
+                <h1>Kooste</h1>
+                <div id="endBlock"></div>
+                <button onclick="startQuestionnaire()" >Aloita alusta</button>
+            </div>
+        </div>
+        <div class="col-md-3 col-right sides">
+            He-Man
+            <p>
+                <div>
+                    Harmaakallon tähden-
+                </div>
+                <div>
+                    Minä olen vahvin!
+                </div>
+                <h1></h1>
+                <p style="font-size: x-small;">oikea suomennos</p>
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="text-center" id="end">
+            jotain jotain jotain
+        </div>
+    </div>
 </div>
 
-<div id="endSummary">
-    <h1>Kooste</h1>
-    <div id="endBlock"></div>
-    <button onclick="startQuestionnaire()" >Aloita alusta</button>
-</div>
 
 <script src="myClasses.js"></script>
 <script src="main.js"></script>
