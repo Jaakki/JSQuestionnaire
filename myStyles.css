@@ -1,38 +1,60 @@
+@font-face{
+    font-family: myFont;
+    src: url(fixedsys-ligatures.ttf)
+}
 :root{
     --pääväri-1: burlywood;
     --pääväri-2: rgb(207, 124, 64);
 }
 .col-left{
-    background-image: url(mann-he.gif);
+    border-bottom-left-radius: 25px;
 }
 .col-center{
     background-color: rgb(207, 124, 64);
     border: 3px dotted black;
 }
 .col-right{
-    background-image: url(he-mann.gif);
+    border-bottom-right-radius: 25px;
 }
 .header{
+    margin: 10px;
     border: 3px dotted black;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     background-image: repeating-linear-gradient(var(--pääväri-1), var(--pääväri-2));
 }
 #end{
-    background-color: coral;
+    margin: 10px;
+    background-color: var(--pääväri-1);
 }
 body{
+    font-family: myFont;
     border: 3px dotted black;
     background-color: rgb(173, 56, 56);
 }
 .varjo{
-    margin: 10px;
-    padding: 10px; 
     box-shadow: 5px 10px 18px black;
 }
 .sides{
+    z-index: 1;
     font-weight: 400;
     font-size: medium;
     background-color: burlywood;
     border: 3px dotted black;
+}
+.toinenRivi{
+    margin: 10px;
+}
+.button{
+    float: left;
+}
+.button:hover{
+    background-color: maroon;
+    color: var(--pääväri-1);
+}
+.table,th,td:hover{
+    background-color: var(--pääväri-1)
+}
+.table{
+    background-color: var(--pääväri-2);
 }

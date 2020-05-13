@@ -65,8 +65,8 @@ function ShowAnswerOptions(answers){
     var answerArray = Array.from(answers);
     
     answerArray.forEach(element => {
-        answerBlock.innerHTML += "<p>"+
-        element+" <button onclick=AnswerButtonClicked("+answerArray.indexOf(element)+")> valitse</button>"
+        answerBlock.innerHTML += "<tr><td>" +
+        element+" <button class='button' onclick=AnswerButtonClicked("+answerArray.indexOf(element)+")> valitse <i class='fas fa-mouse-pointer'></i></button>"
         //note no need for " " in onclick
     });
 }

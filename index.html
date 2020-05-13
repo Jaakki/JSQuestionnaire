@@ -8,69 +8,80 @@
     <link rel="stylesheet" href="myStyles.css">
     <link rel="stylesheet" href="mann-he.gif">
     <link rel="stylesheet" href="he-mann.gif">
+    <script src="https://kit.fontawesome.com/0bb00ddf12.js" crossorigin="anonymous"></script>
 </head>
 <body onload="onStart()">
 <div class="container-fluid">
     <div>
         <div class="text-center header varjo">
             <h1 id="headerText">
-                JSQuestionnaire example
+                JSQuestionnaire example <i class="fas fa-bolt"></i>
             </h1>
         </div>
     </div>
     
-    <div class="row text-center varjo">
-        <div class="col-md-3 col-left sides">
-            Ohjeita
-            <p>
-                <div>
-                    Jänniä asioita
+    <div class="row text-center varjo toinenRivi">
+        <div class="col-lg-3 col-md-1 d-none d-md-block col-left sides varjo">
+            <div class="d-none d-lg-block">
+                Ohjeita
+                <p>
+                    <div>
+                        Jänniä asioita
+                    </div>
+                    <div>
+                        Olennaista asiaa
+                    </div>
+                    <div>
+                        Erittäin tärkeää asiaa
+                    </div>
+                </p>
+                <div class="d-none d-lg-block">
+                    <img class="col-lg-12" src="mann-he.gif">
                 </div>
-                <div>
-                    Olennaista asiaa
-                </div>
-                <div>
-                    Erittäin tärkeää asiaa
-                </div>
-            </p>
+            </div>
         </div>
         <div class="col-md col-center">
             <div id="startBlock">
-                <h1>Tervetuloa</h1>
+                <h1>Tervetuloa </h1>
                 <p>Vastaa kysymyksiin parhaan kykysi mukaan.</p>
-                <button onclick="startQuestionnaire()" >Aloita</button>
+                <button onclick="startQuestionnaire()" >Aloita <i class="fas fa-mouse-pointer"></i></button>
             </div>
             
             <div id="questionsBlock">
             <h1>Kysymys</h1>
                 <p id="questionline"></p>
-                <p id="answerBlock"></p>
-                
+                <table id="answerBlock" class="table table-hover table-bordered"></table>
             </div>
             
             <div id="endSummary">
                 <h1>Kooste</h1>
                 <div id="endBlock"></div>
-                <button onclick="startQuestionnaire()" >Aloita alusta</button>
+                <button onclick="startQuestionnaire()">Aloita alusta <i class="fas fa-mouse-pointer"></i></button>
             </div>
         </div>
-        <div class="col-md-3 col-right sides">
-            He-Man
-            <p>
-                <div>
-                    Harmaakallon tähden-
+        <div class="col-lg-3 col-md-1 d-none d-md-block col-right sides varjo">
+            <div class="d-none d-lg-block">
+                
+                He-Man
+                <p>
+                    <div>
+                        Harmaakallon tähden-
+                    </div>
+                    <div>
+                        Minä olen vahvin!
+                    </div>
+                    <h1></h1>
+                    <p style="font-size: x-small;">oikea suomennos</p>
+                </p>
+                <div class="d-none d-lg-block">
+                    <img class="col-lg-12" src="he-mann.gif">
                 </div>
-                <div>
-                    Minä olen vahvin!
-                </div>
-                <h1></h1>
-                <p style="font-size: x-small;">oikea suomennos</p>
-            </p>
+            </div>
         </div>
     </div>
 
     <div>
-        <div class="text-center" id="end">
+        <div class="text-center varjo" id="end">
             jotain jotain jotain
         </div>
     </div>
